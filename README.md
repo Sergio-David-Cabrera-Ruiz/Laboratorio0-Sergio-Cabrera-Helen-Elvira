@@ -6,4 +6,4 @@ Integrantes:
 
 Funciona la lista, al igual que la edición de ella.
 Lo que no logramos fue ordenarlo sin el sort.
-De ser poosible nos gustaria ver un ejemplo de un método de ordenamiento.
+De ser posible nos gustaria ver un ejemplo de un método de ordenamiento.
