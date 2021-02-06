@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Lab0_1240319_1132718.Datos;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore;
 
 namespace Lab0_1240319_1132718
 {
@@ -23,6 +26,7 @@ namespace Lab0_1240319_1132718
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ContextoNegocio>(options => options.UseSqlServer(Configuration.GetConnectionString("ConeccionDefault")));
             services.AddControllersWithViews();
         }
 
